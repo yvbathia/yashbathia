@@ -1,7 +1,7 @@
 {
     "build": {
       "env": {
-        "REACT_APP_FEATURE_FLAG_UNDER_MAINTANCE": "@react_app_feature_flag_under_maintance"
+        "REACT_APP_FEATURE_FLAG_UNDER_MAINTENANCE": "@react_app_feature_flag_under_maintenance"
       }
     }
   }
