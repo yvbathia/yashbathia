@@ -9,9 +9,7 @@ import flags from "./constants/flags";
 const App = () => (
   <Router>
     <Switch>
-      {console.log(flags)}
       {!flags.underMaintance && <Route exact path={HOME} component={Home} />}
-
       {!flags.underMaintance && <Route exact path={ABOUT} component={About} />}
       {!flags.underMaintance && <Route component={Home} />}
       <Route component={UnderMaintance} />
