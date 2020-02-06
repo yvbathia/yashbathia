@@ -1,5 +1,14 @@
 @import "./variables.scss";
 
 body {
-  font-family: $openSans;
+  line-height: 1.15;
+  font-family: $sansSerif;
+}
+
+h1 {
+  font-family: $sansPro;
+}
+
+p {
+  font-family: $sansSerif;
 }

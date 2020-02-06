@@ -17,30 +17,29 @@ const Header = ({ children }) => (
       </div>
 
       <div className={s.right}>
-        <div className={s.skills}>
-          <Link
-            to="/skills"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            SKILLS
-          </Link>
-        </div>
-        <div className={s.about}>
-          <Link
-            to="/resume"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            RESUME
-          </Link>
-        </div>
-        <div className={s.skills}>
-          <Link
-            to="/contact"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            CONTACT
-          </Link>
-        </div>
+        <Link
+          className={s.links}
+          to="/skills"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          SKILLS
+        </Link>
+
+        <Link
+          className={s.links}
+          to="/resume"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          RESUME
+        </Link>
+
+        <Link
+          className={[s.links, s.btn].join(" ")}
+          to="/contact"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
+          CONTACT
+        </Link>
       </div>
     </div>
     <div className={s.children}>{children}</div>
