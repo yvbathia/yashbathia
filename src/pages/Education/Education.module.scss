@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+
+.title {
+  font-weight: 900;
+  color: $white;
+  line-height: normal;
+  text-transform: lowercase;
+  padding-right: 30px;
+  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.details {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.education {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.year {
+  width: 10%;
+}
+
+.uni {
+  width: 50%;
+}
+
+.degree {
+  width: 20%;
+}
+
+.perc {
+  width: 20%;
+}
