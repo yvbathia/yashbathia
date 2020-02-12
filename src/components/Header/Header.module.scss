@@ -50,6 +50,8 @@
 }
 
 .imgContainer {
+  display: inline-block;
+  position: relative;
   height: 100%;
   width: 90%;
   @media only screen and (max-width: 768px) {
@@ -97,4 +99,38 @@
 
 .child {
   padding: 50px 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+}
+
+.name {
+  font-size: 15px;
+  color: $white;
+}
+
+.subTitle {
+  color: $green;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  right: 0;
+}
+
+.icon {
+  margin: 0 20px;
+  fill: white;
 }
