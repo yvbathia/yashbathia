@@ -31,16 +31,31 @@
 
 .year {
   width: 10%;
-}
-
-.uni {
-  width: 50%;
+  color: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .degree {
-  width: 20%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
 }
 
-.perc {
-  width: 20%;
+.progressWrapper {
+  height: 5px;
+  width: 100%;
+  overflow: visible;
+  font-size: 0.75rem;
+  background-color: #3b3e5a;
+  border-radius: 0;
+}
+
+.progress {
+  height: 5px;
+  visibility: visible;
+  background-color: $green;
 }
