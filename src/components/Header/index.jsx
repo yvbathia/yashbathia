@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import s from "./Header.module.scss";
-import Img from "../../images/profile.png";
-// import { Link } from "react-router-dom";
+import Profile from "../../images/profile.svg";
 
 const propType = {
   children: PropTypes.node.isRequired
@@ -19,7 +18,7 @@ const Header = ({ children }) => (
             <div>Skills</div> */}
           </div>
           <div className={s.imgContainer}>
-            <img className={s.img} src={Img} alt="img" />
+            <img className={s.img} src={Profile} alt="img" />
           </div>
         </div>
         <div className={s.details}>
