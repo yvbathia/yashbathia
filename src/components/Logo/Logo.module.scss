@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.root {
+  display: inline-flex;
+  align-items: center;
+}
+
+.symbole {
+  background-color: $blue;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  font-family: $bold;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  margin-right: 10px;
+}
+.name {
+  font-size: 20px;
+}
+.fname {
+  font-family: $bold;
+}
