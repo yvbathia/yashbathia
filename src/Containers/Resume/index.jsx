@@ -4,10 +4,8 @@ import Layout from "../../components/Layout";
 
 const Resume = () => {
   return (
-    <Layout>
-      <div className={s.root}>
-        <div className={s.s}>Resume</div>
-      </div>
+    <Layout headText="Resume">
+      <div className={s.root}>Work In Progress</div>
     </Layout>
   );
 };

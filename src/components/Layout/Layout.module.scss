@@ -8,10 +8,17 @@
   align-items: center;
 }
 
+.header {
+  padding: 40px 70px;
+}
+
+.head {
+  width: 100%;
+}
+
 .container {
   max-width: 1240px;
   width: calc(100% - 140px);
-  padding: 40px 70px;
   border-radius: 40px;
   background-color: $theme;
   margin: 40px 70px;
@@ -19,4 +26,5 @@
 
 .child {
   width: 100%;
+  padding: 40px 70px;
 }
