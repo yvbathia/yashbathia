@@ -23,6 +23,14 @@
   }
 }
 
+.social {
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  fill: $grey
+}
+
 .me {
   width: 50%;
   display: flex;
@@ -45,5 +53,39 @@
   > a {
     color: $blue;
     text-decoration: none;
+  }
+}
+
+.btns {
+  margin-top: 30px;
+
+  > * {
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: $white;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+
+.contact {
+  border: 2px solid $light-grey;
+  color: $grey;
+  box-shadow: 0 10px 10px -8px $light-grey;
+  &:hover {
+    // color: $white;
+    background-color: $light-grey;
+  }
+}
+
+.resume {
+  border: 2px solid $light-blue;
+  color: $blue;
+  box-shadow: 0 10px 10px -8px $light-grey;
+  &:hover {
+    // color: $white;
+    background-color: $light-blue;
   }
 }
