@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.root {
+  padding: 10px;
+  border: 2px solid $light-grey;
+  height: 215px;
+}
+
+.child {
+  padding: 20px 10px 10px 40px;
+}
+
+.title {
+  font-size: 10px;
+  font-weight: 400;
+  font-style: italic;
+  color: $grey;
+  margin: 0 0 10px;
+  line-height: 1.75em;
+}
+
+.author {
+  > * {
+    margin: 0;
+  }
+  > p {
+    opacity: 30%;
+  }
+}
