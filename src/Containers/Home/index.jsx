@@ -95,7 +95,7 @@ const Home = () => {
           </div>
           <div className={s.pagination}>
             {[...Array(recomendationData.length - 2)].map((_, index) => (
-              <div
+              <span
                 key={index}
                 onClick={() => setCurrentIndex(index * 2)}
                 className={[
