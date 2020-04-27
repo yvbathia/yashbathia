@@ -24,10 +24,11 @@
 }
 
 .author {
-  > * {
+  * {
     margin: 0;
   }
-  > p {
-    opacity: 31%;
-  }
+}
+
+.company {
+  opacity: 0.3;
 }

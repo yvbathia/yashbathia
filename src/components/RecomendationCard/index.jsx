@@ -14,7 +14,7 @@ const RecomendationCard = ({ text, author, company }) => (
       <div className={s.title}>{text}</div>
       <div className={s.author}>
         <h5>{author}</h5>
-        <p>{company}</p>
+        <p className={s.company}>{company}</p>
       </div>
     </div>
   </div>

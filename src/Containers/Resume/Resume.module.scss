@@ -3,4 +3,70 @@
 .root {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.eduExp {
+  display: flex;
+}
+
+.edu {
+  width: 50%;
+}
+
+.exp {
+  width: 50%;
+}
+
+.title {
+  display: inline-block;
+}
+
+.card {
+  margin-top: 50px;
+  margin-left: 30px;
+  :nth-child(1) {
+    padding-top: 0;
+  }
+  > div {
+    border-bottom: 1px solid $light-grey;
+  }
+  :nth-last-child(1) {
+    border-bottom: 1px solid $theme;
+  }
+}
+
+.skills {
+  display: flex;
+  margin-top: 50px;
+}
+
+.skill {
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.experienced {
+  width: 50%;
+}
+
+.core {
+  width: 50%;
+}
+
+.responsiblity {
+  margin-top: 50px;
+}
+
+.listItems {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  * {
+    color: $grey;
+    margin-top: 5px;
+  }
 }
