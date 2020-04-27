@@ -5,6 +5,11 @@
   align-items: center;
 }
 
+.link {
+  text-decoration: none;
+  color: unset;
+}
+
 .symbole {
   background-color: $blue;
   border-radius: 50%;
