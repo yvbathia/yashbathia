@@ -31,13 +31,6 @@ const Header = () => {
           <Link to={RESUME}>Resume</Link>
         </div>
         <div
-          className={[s.item, SKILLS === currentPath ? s.current : ""].join(
-            " "
-          )}
-        >
-          <Link to={SKILLS}>Skills</Link>
-        </div>
-        <div
           className={[s.item, PORTFOLIO === currentPath ? s.current : ""].join(
             " "
           )}
