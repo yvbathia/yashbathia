@@ -2,13 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import s from "./Header.module.scss";
 import Logo from "../Logo";
-import {
-  HOME,
-  RESUME,
-  SKILLS,
-  CONTACT,
-  PORTFOLIO,
-} from "../../constants/routes";
+import { HOME, RESUME, CONTACT, PORTFOLIO } from "../../constants/routes";
 
 const Header = () => {
   let currentPath = window.location.pathname;

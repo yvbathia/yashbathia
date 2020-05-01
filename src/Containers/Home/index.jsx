@@ -6,7 +6,7 @@ import avatar from "../../images/avatar.jpg";
 import { ReactComponent as FB } from "../../images/fb.svg";
 import { ReactComponent as GitHub } from "../../images/github.svg";
 import { ReactComponent as LinkedIn } from "../../images/linkedin.svg";
-// import { ReactComponent as Twitter } from "../../images/twitter.svg";
+import { ReactComponent as Twitter } from "../../images/twitterNew.svg";
 import { CONTACT } from "../../constants/routes";
 import HR from "../../components/HR";
 import RecomendationCard from "../../components/RecomendationCard";
@@ -48,10 +48,21 @@ const Home = () => {
           <div className={s.profile}>
             <img src={avatar} alt="Yash" />
             <div className={s.social}>
-              <GitHub />
-              <LinkedIn />
-              {/* <Twitter /> */}
-              <FB />
+              <a href="https://github.com/yvbathia" target="__blank">
+                <GitHub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yash-bathia/"
+                target="__blank"
+              >
+                <LinkedIn />
+              </a>
+              <a href="https://twitter.com/yashbathia" target="__blank">
+                <Twitter />
+              </a>
+              <a href="https://www.facebook.com/yashbathia" target="__blank">
+                <FB />
+              </a>
             </div>
           </div>
           <div className={s.me}>
