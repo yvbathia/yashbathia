@@ -1,0 +1,86 @@
+@import "../../styles/variables.scss";
+
+.root {
+  display: flex;
+  flex-direction: row;
+}
+
+.emailContainer {
+  width: 40%;
+  display: flex;
+  svg {
+    width: 30px;
+    margin-right: 20px;
+  }
+}
+
+.email {
+  font-weight: 600;
+  font-size: 16px;
+  color: $grey-font;
+  font-family: $bold;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 21px;
+}
+
+.input {
+  margin: 0 0 21.5px;
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 10px 25px 10px 12px;
+}
+
+.inputArea {
+  margin: 0 0 21.5px;
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  width: 100%;
+  height: 160px;
+  padding: 10px 25px 10px 12px;
+}
+
+.formContainer {
+  width: 70%;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: $white;
+  padding: 10px 15px;
+  border: 2px solid $blue;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  width: 50%;
+}
+
+.head {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.firstPart {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.secondPart {
+  width: 50%;
+}
+
+.warning {
+  color: red;
+  font-size: 10px;
+}

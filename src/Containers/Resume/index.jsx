@@ -36,7 +36,13 @@ const Resume = () => {
               <HR />
               <div className={s.card}>
                 <EduExpCard
-                  year="May-2019 - Current"
+                  year="May-2020 - Current"
+                  heading="SupplyAI"
+                  title="Software Engineer"
+                  desc="React, JavaScript, HTML, CSS"
+                />
+                <EduExpCard
+                  year="May-2019 - May-2020"
                   heading="Tech Holding"
                   title="Software Engineer"
                   desc="React, NextJs, GatsbyJs, TypeScript, GraphQL, DynamoDB, HTML, CSS"
