@@ -13,10 +13,18 @@ const Portfolio = () => (
       <div className={s.container}>
         <img src={Project1} className={s.img} alt="Project1" />
         <div className={s.btns}>
-          <a href="github" className={s.gitHub}>
+          <a
+            href="https://github.com/yvbathia/tic-tac-toe"
+            className={s.gitHub}
+            target="_black"
+          >
             GitHub
           </a>
-          <a href="Live" className={s.live}>
+          <a
+            href="https://playtictactoe.yashbathia.in/"
+            className={s.live}
+            target="_black"
+          >
             Live
           </a>
         </div>
@@ -24,10 +32,18 @@ const Portfolio = () => (
       <div className={s.container}>
         <img src={Project2} className={s.img} alt="Project2" />
         <div className={s.btns}>
-          <a href="github" className={s.gitHub}>
+          <a
+            href="https://github.com/yvbathia/React-gutendex-api-example"
+            className={s.gitHub}
+            target="_black"
+          >
             GitHub
           </a>
-          <a href="Live" className={s.live}>
+          <a
+            href="https://gutendex.yashbathia.in"
+            className={s.live}
+            target="_black"
+          >
             Live
           </a>
         </div>
@@ -35,10 +51,18 @@ const Portfolio = () => (
       <div className={s.container}>
         <img src={Project3} className={s.img} alt="Project3" />
         <div className={s.btns}>
-          <a href="github" className={s.gitHub}>
+          <a
+            href="https://github.com/yvbathia/react-flickr-sample-example"
+            className={s.gitHub}
+            target="_black"
+          >
             GitHub
           </a>
-          <a href="Live" className={s.live}>
+          <a
+            href="https://flickr.yashbathia.in/"
+            className={s.live}
+            target="_black"
+          >
             Live
           </a>
         </div>
@@ -46,10 +70,14 @@ const Portfolio = () => (
       <div className={s.container}>
         <img src={Project4} className={s.img} alt="Project4" />
         <div className={s.btns}>
-          <a href="github" className={s.gitHub}>
+          <a
+            href="https://github.com/yvbathia/yashbathia"
+            className={s.gitHub}
+            target="_black"
+          >
             GitHub
           </a>
-          <a href="Live" className={s.live}>
+          <a href="https://yashbathia.in" className={s.live} target="_black">
             Live
           </a>
         </div>
@@ -57,10 +85,18 @@ const Portfolio = () => (
       <div className={s.container}>
         <img src={Project5} className={s.img} alt="Project5" />
         <div className={s.btns}>
-          <a href="github" className={s.gitHub}>
+          <a
+            href="https://github.com/yvbathia/online-learning-platform-sample"
+            className={s.gitHub}
+            target="_black"
+          >
             GitHub
           </a>
-          <a href="Live" className={s.live}>
+          <a
+            href="https://edu.yashbathia.in"
+            className={s.live}
+            target="_black"
+          >
             Live
           </a>
         </div>
