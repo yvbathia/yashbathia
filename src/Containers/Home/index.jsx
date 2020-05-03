@@ -11,6 +11,7 @@ import { CONTACT } from "../../constants/routes";
 import HR from "../../components/HR";
 import RecomendationCard from "../../components/RecomendationCard";
 import { useState } from "react";
+import { useWindowWidth } from "../../hooks/windowHook";
 
 const recomendationData = [
   {
@@ -41,6 +42,7 @@ const recomendationData = [
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const width = useWindowWidth();
   return (
     <Layout>
       <div className={s.root}>
@@ -95,26 +97,46 @@ const Home = () => {
             <HR />
           </div>
           <div className={s.recomItems}>
-            {[currentIndex, currentIndex + 1].map((index) => (
+            {width > 1200 ? (
+              [currentIndex, currentIndex + 1].map((index) => (
+                <RecomendationCard
+                  key={index}
+                  text={recomendationData[index].title}
+                  author={recomendationData[index].author}
+                  company={recomendationData[index].company}
+                />
+              ))
+            ) : (
               <RecomendationCard
-                key={index}
-                text={recomendationData[index].title}
-                author={recomendationData[index].author}
-                company={recomendationData[index].company}
+                key={currentIndex}
+                text={recomendationData[currentIndex].title}
+                author={recomendationData[currentIndex].author}
+                company={recomendationData[currentIndex].company}
               />
-            ))}
+            )}
           </div>
           <div className={s.pagination}>
-            {[...Array(recomendationData.length - 2)].map((_, index) => (
-              <span
-                key={index}
-                onClick={() => setCurrentIndex(index * 2)}
-                className={[
-                  s.nav,
-                  currentIndex === index * 2 ? s.current : "",
-                ].join(" ")}
-              />
-            ))}
+            {width > 1200
+              ? [...Array(recomendationData.length - 2)].map((_, index) => (
+                  <span
+                    key={index}
+                    onClick={() => setCurrentIndex(index * 2)}
+                    className={[
+                      s.nav,
+                      currentIndex === index * 2 ? s.current : "",
+                    ].join(" ")}
+                  />
+                ))
+              : [...Array(recomendationData.length)].map((_, index) => (
+                  <span
+                    key={index}
+                    onClick={() => setCurrentIndex(index)}
+                    className={[
+                      s.nav,
+                      currentIndex === index ? s.current : "",
+                    ].join(" ")}
+                  />
+                ))}
           </div>
         </div>
       </div>

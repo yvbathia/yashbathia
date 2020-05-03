@@ -9,14 +9,23 @@
 
 .eduExp {
   display: flex;
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
 }
 
 .edu {
   width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .exp {
   width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .title {
@@ -40,6 +49,9 @@
 .skills {
   display: flex;
   margin-top: 50px;
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
 }
 
 .skill {
@@ -50,10 +62,16 @@
 
 .experienced {
   width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .core {
   width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .responsiblity {

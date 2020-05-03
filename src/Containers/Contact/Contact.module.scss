@@ -3,6 +3,9 @@
 .root {
   display: flex;
   flex-direction: row;
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
 }
 
 .emailContainer {
@@ -11,6 +14,9 @@
   svg {
     width: 30px;
     margin-right: 20px;
+  }
+  @media (max-width: 576px) {
+    width: 100%;
   }
 }
 
@@ -47,11 +53,17 @@
 
 .formContainer {
   width: 70%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .form {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
 }
 
 .btn {
@@ -74,10 +86,16 @@
   width: 40%;
   display: flex;
   flex-direction: column;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .secondPart {
   width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .warning {

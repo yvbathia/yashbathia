@@ -12,4 +12,9 @@
     font-style: normal;
     color: $grey-font;
   }
+  border-top: 3px solid $border-color;
+  border-bottom: 3px solid $border-color;
+  @media (max-width: 768px) {
+    margin-top: 64px;
+  }
 }
