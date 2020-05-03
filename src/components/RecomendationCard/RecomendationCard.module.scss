@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.root {
+  padding: 10px;
+  border: 2px solid $light-grey;
+  height: 215px;
+}
+
+.child {
+  padding: 20px 10px 10px 40px;
+  @media (max-width: 468px) {
+    padding: 5px 10px 0px 40px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.title {
+  font-size: 10px;
+  font-weight: 400;
+  font-style: italic;
+  color: $grey;
+  margin: 0 0 10px;
+  line-height: 1.75em;
+  max-height: 150px;
+  overflow-x: hidden;
+}
+
+.author {
+  * {
+    margin: 0;
+  }
+}
+
+.company {
+  opacity: 0.3;
+}

@@ -1,16 +1,22 @@
 @import "./variables.scss";
+@import "./fonts/style.scss";
 
 body {
-  line-height: 1.15;
-  font-family: $sansSerif;
-  background: #0a0000;
-  color: grey;
+  font-family: $regular;
+  background-color: $light-blue;
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 h1 {
-  font-family: $sansPro;
+  font-family: $bold;
 }
 
 p {
-  font-family: $sansSerif;
+  font-family: $regular;
 }

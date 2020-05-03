@@ -1,26 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-import { HOME, ABOUT, SKILLS, RESUME, CONTACT } from "./constants/routes";
-import About from "./pages/About";
+import Home from "./Containers/Home";
+import { HOME, RESUME, PORTFOLIO, CONTACT } from "./constants/routes";
 import UnderMaintenance from "./components/UnderMaintenance";
 import flags from "./constants/flags";
-import Skills from "./pages/Skills";
-import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
+import Resume from "./Containers/Resume";
+import Portfolio from "./Containers/Portfolio";
+import Contact from "./Containers/Contact";
 
 const App = () => (
   <Router>
     <Switch>
       {!flags.underMaintenance && <Route exact path={HOME} component={Home} />}
       {!flags.underMaintenance && (
-        <Route exact path={ABOUT} component={About} />
-      )}
-      {!flags.underMaintenance && (
-        <Route exact path={SKILLS} component={Skills} />
-      )}
-      {!flags.underMaintenance && (
         <Route exact path={RESUME} component={Resume} />
+      )}
+      {!flags.underMaintenance && (
+        <Route exact path={PORTFOLIO} component={Portfolio} />
       )}
       {!flags.underMaintenance && (
         <Route exact path={CONTACT} component={Contact} />

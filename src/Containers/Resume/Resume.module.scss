@@ -1,0 +1,90 @@
+@import "../../styles/variables.scss";
+
+.root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.eduExp {
+  display: flex;
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+}
+
+.edu {
+  width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.exp {
+  width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.title {
+  display: inline-block;
+}
+
+.card {
+  margin-top: 50px;
+  margin-left: 30px;
+  :nth-child(1) {
+    padding-top: 0;
+  }
+  > div {
+    border-bottom: 1px solid $light-grey;
+  }
+  :nth-last-child(1) {
+    border-bottom: 1px solid $theme;
+  }
+}
+
+.skills {
+  display: flex;
+  margin-top: 50px;
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+}
+
+.skill {
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.experienced {
+  width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.core {
+  width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.responsiblity {
+  margin-top: 50px;
+}
+
+.listItems {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  * {
+    color: $grey;
+    margin-top: 5px;
+  }
+}

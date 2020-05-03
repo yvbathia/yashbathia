@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.root {
+  width: 100%;
+  background-color: $light-gray-1;
+  padding: 65px 70px;
+  > h1 {
+    margin: 0;
+    font-family: $regular;
+    font-weight: 600;
+    font-size: 44px;
+    font-style: normal;
+    color: $grey-font;
+  }
+  border-top: 3px solid $border-color;
+  border-bottom: 3px solid $border-color;
+  @media (max-width: 768px) {
+    margin-top: 64px;
+  }
+}

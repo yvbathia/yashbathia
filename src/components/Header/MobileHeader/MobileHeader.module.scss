@@ -1,0 +1,53 @@
+@import "../../../styles/variables.scss";
+
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+.container {
+  z-index: 999;
+  background-color: $white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+.menuIcon {
+  * {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.menuHead {
+  background-color: $white;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  border-top: 2px solid $border-color;
+}
+
+.item {
+  padding: 20px 30px;
+}
+
+.link {
+  color: $grey-font;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
