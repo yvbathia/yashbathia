@@ -40,7 +40,7 @@ const Contact = () => {
                 type="textarea"
                 className={s.inputArea}
                 placeholder="Message"
-                maxlength="100"
+                maxLength="100"
               />
             </div>
             {width <= 576 && <button className={s.btn}>Send Message</button>}
