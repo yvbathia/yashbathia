@@ -24,10 +24,10 @@ const Contact = () => {
               <input
                 className={s.input}
                 placeholder="Full Name"
-                maxlength="20"
+                maxLength="20"
               />
-              <input className={s.input} placeholder="Email" maxlength="20" />
-              <input className={s.input} placeholder="Subject" maxlength="20" />
+              <input className={s.input} placeholder="Email" maxLength="20" />
+              <input className={s.input} placeholder="Subject" maxLength="20" />
               {width > 576 && <button className={s.btn}>Send Message</button>}
               {width > 576 && (
                 <span className={s.warning}>
