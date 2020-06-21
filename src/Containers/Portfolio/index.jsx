@@ -92,13 +92,14 @@ const Portfolio = () => (
           >
             GitHub
           </a>
-          <a
+          {/* Need to fix live version api call */}
+          {/* <a
             href="https://edu.yashbathia.in"
             className={s.live}
             target="_black"
           >
             Live
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

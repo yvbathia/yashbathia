@@ -48,12 +48,6 @@ const Resume = () => {
                   desc="React, NextJs, GatsbyJs, TypeScript, GraphQL, DynamoDB, HTML, CSS"
                 />
                 <EduExpCard
-                  year="Dec-2018 - May-2019"
-                  heading="Bombay Softwares"
-                  title="Software Engineer"
-                  desc="PHP, YII2, Laravel, HTML, CSS, JQuery, MongoDB, MySQL"
-                />
-                <EduExpCard
                   year="May-2017 - Dec-2018"
                   heading="Flotomate"
                   title="Software Engineer"
@@ -76,6 +70,8 @@ const Resume = () => {
               <ProgressBarWithTItle title="GraphQL" percentage={50} />
               <ProgressBarWithTItle title="SQL" percentage={40} />
               <ProgressBarWithTItle title="NoSQL" percentage={50} />
+              <ProgressBarWithTItle title="Jest" percentage={60} />
+              <ProgressBarWithTItle title="Cypress" percentage={50} />
             </div>
           </div>
           <div className={s.core}>
@@ -93,8 +89,6 @@ const Resume = () => {
               <ProgressBarWithTItle title="CSS" percentage={80} />
               <ProgressBarWithTItle title="Styled Components" percentage={80} />
               <ProgressBarWithTItle title="SASS" percentage={80} />
-              <ProgressBarWithTItle title="Jest" percentage={60} />
-              <ProgressBarWithTItle title="Cypress" percentage={50} />
             </div>
           </div>
         </div>
@@ -105,8 +99,7 @@ const Resume = () => {
           </div>
           <div className={s.listItems}>
             <span>
-              - Worked as customer-facing for product analysand and product
-              design
+              - Worked in customer-facing for product analyzed and product design
             </span>
             <span>- Responsible for the release management lifecycle</span>
           </div>

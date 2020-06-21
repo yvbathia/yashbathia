@@ -71,7 +71,7 @@ const Home = () => {
             <span className={s.eyeBrow}>Front-end developer</span>
             <span className={s.name}>Yash Bathia</span>
             <span className={s.detail}>
-              Currently working with awesome folks at Tech Holdings. Passionate
+              Currently working with awesome folks at SupplyAI. Passionate
               about building world class web applications. Have a look at skills
               or just connect with me on{" "}
               <a href="https://www.linkedin.com/in/yash-bathia/">LinkedIn</a>. I
@@ -81,7 +81,7 @@ const Home = () => {
             <div className={s.btns}>
               <a
                 className={s.resume}
-                href="https://drive.google.com/uc?export=download&id=1p5ChdKsN-xgeNqVRmMSRXmnzaQSkK-2g"
+                href="https://drive.google.com/uc?export=download&id=1-hJYRT6xCMwLzH-qbXsp56Br9YKMaQcK"
               >
                 Download CV
               </a>
