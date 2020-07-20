@@ -6,6 +6,7 @@ import Project2 from "../../images/project2.png";
 import Project3 from "../../images/project3.png";
 import Project4 from "../../images/project4.png";
 import Project5 from "../../images/project5.png";
+import Project6 from "../../images/project6.png";
 
 const Portfolio = () => (
   <Layout headText="Portfolio">
@@ -102,6 +103,26 @@ const Portfolio = () => (
           </a> */}
         </div>
       </div>
+      <div className={s.container}>
+          <img src={Project6} className={s.img} alt="Project6" />
+          <div className={s.btns}>
+            <a
+              href="https://github.com/yvbathia/Snake-And-Ladder"
+              className={s.gitHub}
+              target="_black"
+            >
+              GitHub
+            </a>
+            <a
+              href="http://snakeandladder.yashbathia.in/"
+              className={s.live}
+              target="_black"
+            >
+              Live
+            </a>
+          </div>
+        </div>
+
     </div>
   </Layout>
 );
