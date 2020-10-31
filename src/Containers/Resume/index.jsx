@@ -36,10 +36,10 @@ const Resume = () => {
               <HR />
               <div className={s.card}>
                 <EduExpCard
-                  year="May-2020 - Current"
-                  heading="SupplyAI"
+                  year="Aug-2020 - Current"
+                  heading="NoBroker"
                   title="Software Engineer"
-                  desc="React, JavaScript, HTML, CSS"
+                  desc="React, Redux-saga, JavaScript, HTML, CSS"
                 />
                 <EduExpCard
                   year="May-2019 - May-2020"
@@ -84,6 +84,7 @@ const Resume = () => {
               <ProgressBarWithTItle title="React" percentage={70} />
               <ProgressBarWithTItle title="GatsByJs" percentage={65} />
               <ProgressBarWithTItle title="NextJs" percentage={60} />
+              <ProgressBarWithTItle title="Redux-saga" percentage={60} />
               <ProgressBarWithTItle title="TypeScript" percentage={60} />
               <ProgressBarWithTItle title="HTML" percentage={80} />
               <ProgressBarWithTItle title="CSS" percentage={80} />

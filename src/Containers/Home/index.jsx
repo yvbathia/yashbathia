@@ -16,6 +16,12 @@ import { useWindowWidth } from "../../hooks/windowHook";
 const recomendationData = [
   {
     title:
+      "Yash has been an integral part of ITSM product development team at Flotomate. I've hired Yash when he was a fresh graduate and witnessed him to quickly becoming a responsible Software professional in 2 years. He took ownership of complex product features and delivered the result for the business. Yash pursues a great attitude and aptitude with a keen interest to understand the product domain. That makes him a great asset to any engineering or product team. Besides engineering, One thing Yash made himself different from other engineers is to work with customers and make them successful both in terms of enterprise implementation or resolving the technical issue in the production environment under time pressure.",
+    author: "Akash Kotadia",
+    company: "Flotomate",
+  },
+  {
+    title:
       "Yash is a great team member and was definitely a great asset to our front-end focused team. He has great JavaScript skills and excellent English communication ability. Yash is reliable, accountable, and kind to others. Looking forward to working with Yash again the future! Thank you Yash!",
     author: "Andy Saman",
     company: "Tech Holding",
@@ -71,7 +77,7 @@ const Home = () => {
             <span className={s.eyeBrow}>Front-end developer</span>
             <span className={s.name}>Yash Bathia</span>
             <span className={s.detail}>
-              Currently working with awesome folks at SupplyAI. Passionate
+              Currently working with awesome folks at NoBroker. Passionate
               about building world class web applications. Have a look at skills
               or just connect with me on{" "}
               <a href="https://www.linkedin.com/in/yash-bathia/">LinkedIn</a>. I
@@ -98,12 +104,12 @@ const Home = () => {
           </div>
           <div className={s.recomItems}>
             {width > 1200 ? (
-              [currentIndex, currentIndex + 1].map((index) => (
+              recomendationData.slice(currentIndex === recomendationData.length - 1 ? currentIndex - 1 : currentIndex, currentIndex + 2).map((element) => (
                 <RecomendationCard
-                  key={index}
-                  text={recomendationData[index].title}
-                  author={recomendationData[index].author}
-                  company={recomendationData[index].company}
+                  key={element.author}
+                  text={element.title}
+                  author={element.author}
+                  company={element.company}
                 />
               ))
             ) : (
