@@ -12,7 +12,7 @@ const Contact = () => {
       <div className={s.root}>
         <div className={s.emailContainer}>
           <Email />
-          <h4 className={s.email}>hello@yashbathia.in</h4>
+          <h4 className={s.email}>yvbathia@gmail.com</h4>
         </div>
         <div className={s.formContainer}>
           <div className={s.head}>
